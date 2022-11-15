@@ -1,0 +1,859 @@
+# Nmap 7.93 scan initiated Mon Nov 14 19:17:16 2022 as: nmap -sV --script vuln -p- -oN scanAllVuln.txt -iL listIp
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Nmap scan report for 10.10.10.9
+Host is up (0.0073s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.7 (Ubuntu Linux; protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:7.6p1: 
+|     	EXPLOITPACK:98FE96309F9524B8C84C508837551A19	5.8	https://vulners.com/exploitpack/EXPLOITPACK:98FE96309F9524B8C84C508837551A19	*EXPLOIT*
+|     	EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97	5.8	https://vulners.com/exploitpack/EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97	*EXPLOIT*
+|     	EDB-ID:46516	5.8	https://vulners.com/exploitdb/EDB-ID:46516	*EXPLOIT*
+|     	EDB-ID:46193	5.8	https://vulners.com/exploitdb/EDB-ID:46193	*EXPLOIT*
+|     	CVE-2019-6111	5.8	https://vulners.com/cve/CVE-2019-6111
+|     	1337DAY-ID-32328	5.8	https://vulners.com/zdt/1337DAY-ID-32328	*EXPLOIT*
+|     	1337DAY-ID-32009	5.8	https://vulners.com/zdt/1337DAY-ID-32009	*EXPLOIT*
+|     	SSH_ENUM	5.0	https://vulners.com/canvas/SSH_ENUM	*EXPLOIT*
+|     	PACKETSTORM:150621	5.0	https://vulners.com/packetstorm/PACKETSTORM:150621	*EXPLOIT*
+|     	EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0	5.0	https://vulners.com/exploitpack/EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0	*EXPLOIT*
+|     	EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283	5.0	https://vulners.com/exploitpack/EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283	*EXPLOIT*
+|     	EDB-ID:45939	5.0	https://vulners.com/exploitdb/EDB-ID:45939	*EXPLOIT*
+|     	EDB-ID:45233	5.0	https://vulners.com/exploitdb/EDB-ID:45233	*EXPLOIT*
+|     	CVE-2018-15919	5.0	https://vulners.com/cve/CVE-2018-15919
+|     	CVE-2018-15473	5.0	https://vulners.com/cve/CVE-2018-15473
+|     	1337DAY-ID-31730	5.0	https://vulners.com/zdt/1337DAY-ID-31730	*EXPLOIT*
+|     	CVE-2021-41617	4.4	https://vulners.com/cve/CVE-2021-41617
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|     	CVE-2019-6110	4.0	https://vulners.com/cve/CVE-2019-6110
+|     	CVE-2019-6109	4.0	https://vulners.com/cve/CVE-2019-6109
+|     	CVE-2018-20685	2.6	https://vulners.com/cve/CVE-2018-20685
+|     	PACKETSTORM:151227	0.0	https://vulners.com/packetstorm/PACKETSTORM:151227	*EXPLOIT*
+|     	MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-	0.0	https://vulners.com/metasploit/MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-	*EXPLOIT*
+|_    	1337DAY-ID-30937	0.0	https://vulners.com/zdt/1337DAY-ID-30937	*EXPLOIT*
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.10.10.10
+Host is up (0.0081s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:7.2p2: 
+|     	PACKETSTORM:140070	7.8	https://vulners.com/packetstorm/PACKETSTORM:140070	*EXPLOIT*
+|     	EXPLOITPACK:5BCA798C6BA71FAE29334297EC0B6A09	7.8	https://vulners.com/exploitpack/EXPLOITPACK:5BCA798C6BA71FAE29334297EC0B6A09	*EXPLOIT*
+|     	EDB-ID:40888	7.8	https://vulners.com/exploitdb/EDB-ID:40888	*EXPLOIT*
+|     	CVE-2016-8858	7.8	https://vulners.com/cve/CVE-2016-8858
+|     	CVE-2016-6515	7.8	https://vulners.com/cve/CVE-2016-6515
+|     	1337DAY-ID-26494	7.8	https://vulners.com/zdt/1337DAY-ID-26494	*EXPLOIT*
+|     	SSV:92579	7.5	https://vulners.com/seebug/SSV:92579	*EXPLOIT*
+|     	CVE-2016-10009	7.5	https://vulners.com/cve/CVE-2016-10009
+|     	1337DAY-ID-26576	7.5	https://vulners.com/zdt/1337DAY-ID-26576	*EXPLOIT*
+|     	SSV:92582	7.2	https://vulners.com/seebug/SSV:92582	*EXPLOIT*
+|     	CVE-2016-10012	7.2	https://vulners.com/cve/CVE-2016-10012
+|     	CVE-2015-8325	7.2	https://vulners.com/cve/CVE-2015-8325
+|     	SSV:92580	6.9	https://vulners.com/seebug/SSV:92580	*EXPLOIT*
+|     	CVE-2016-10010	6.9	https://vulners.com/cve/CVE-2016-10010
+|     	1337DAY-ID-26577	6.9	https://vulners.com/zdt/1337DAY-ID-26577	*EXPLOIT*
+|     	EXPLOITPACK:98FE96309F9524B8C84C508837551A19	5.8	https://vulners.com/exploitpack/EXPLOITPACK:98FE96309F9524B8C84C508837551A19	*EXPLOIT*
+|     	EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97	5.8	https://vulners.com/exploitpack/EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97	*EXPLOIT*
+|     	EDB-ID:46516	5.8	https://vulners.com/exploitdb/EDB-ID:46516	*EXPLOIT*
+|     	EDB-ID:46193	5.8	https://vulners.com/exploitdb/EDB-ID:46193	*EXPLOIT*
+|     	CVE-2019-6111	5.8	https://vulners.com/cve/CVE-2019-6111
+|     	1337DAY-ID-32328	5.8	https://vulners.com/zdt/1337DAY-ID-32328	*EXPLOIT*
+|     	1337DAY-ID-32009	5.8	https://vulners.com/zdt/1337DAY-ID-32009	*EXPLOIT*
+|     	SSV:91041	5.5	https://vulners.com/seebug/SSV:91041	*EXPLOIT*
+|     	PACKETSTORM:140019	5.5	https://vulners.com/packetstorm/PACKETSTORM:140019	*EXPLOIT*
+|     	PACKETSTORM:136234	5.5	https://vulners.com/packetstorm/PACKETSTORM:136234	*EXPLOIT*
+|     	EXPLOITPACK:F92411A645D85F05BDBD274FD222226F	5.5	https://vulners.com/exploitpack/EXPLOITPACK:F92411A645D85F05BDBD274FD222226F	*EXPLOIT*
+|     	EXPLOITPACK:9F2E746846C3C623A27A441281EAD138	5.5	https://vulners.com/exploitpack/EXPLOITPACK:9F2E746846C3C623A27A441281EAD138	*EXPLOIT*
+|     	EXPLOITPACK:1902C998CBF9154396911926B4C3B330	5.5	https://vulners.com/exploitpack/EXPLOITPACK:1902C998CBF9154396911926B4C3B330	*EXPLOIT*
+|     	EDB-ID:40858	5.5	https://vulners.com/exploitdb/EDB-ID:40858	*EXPLOIT*
+|     	EDB-ID:40119	5.5	https://vulners.com/exploitdb/EDB-ID:40119	*EXPLOIT*
+|     	CVE-2016-3115	5.5	https://vulners.com/cve/CVE-2016-3115
+|     	SSH_ENUM	5.0	https://vulners.com/canvas/SSH_ENUM	*EXPLOIT*
+|     	PACKETSTORM:150621	5.0	https://vulners.com/packetstorm/PACKETSTORM:150621	*EXPLOIT*
+|     	EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0	5.0	https://vulners.com/exploitpack/EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0	*EXPLOIT*
+|     	EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283	5.0	https://vulners.com/exploitpack/EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283	*EXPLOIT*
+|     	EDB-ID:45939	5.0	https://vulners.com/exploitdb/EDB-ID:45939	*EXPLOIT*
+|     	EDB-ID:45233	5.0	https://vulners.com/exploitdb/EDB-ID:45233	*EXPLOIT*
+|     	CVE-2018-15919	5.0	https://vulners.com/cve/CVE-2018-15919
+|     	CVE-2018-15473	5.0	https://vulners.com/cve/CVE-2018-15473
+|     	CVE-2017-15906	5.0	https://vulners.com/cve/CVE-2017-15906
+|     	CVE-2016-10708	5.0	https://vulners.com/cve/CVE-2016-10708
+|     	1337DAY-ID-31730	5.0	https://vulners.com/zdt/1337DAY-ID-31730	*EXPLOIT*
+|     	CVE-2021-41617	4.4	https://vulners.com/cve/CVE-2021-41617
+|     	EXPLOITPACK:802AF3229492E147A5F09C7F2B27C6DF	4.3	https://vulners.com/exploitpack/EXPLOITPACK:802AF3229492E147A5F09C7F2B27C6DF	*EXPLOIT*
+|     	EXPLOITPACK:5652DDAA7FE452E19AC0DC1CD97BA3EF	4.3	https://vulners.com/exploitpack/EXPLOITPACK:5652DDAA7FE452E19AC0DC1CD97BA3EF	*EXPLOIT*
+|     	EDB-ID:40113	4.3	https://vulners.com/exploitdb/EDB-ID:40113	*EXPLOIT*
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|     	CVE-2016-6210	4.3	https://vulners.com/cve/CVE-2016-6210
+|     	1337DAY-ID-25440	4.3	https://vulners.com/zdt/1337DAY-ID-25440	*EXPLOIT*
+|     	1337DAY-ID-25438	4.3	https://vulners.com/zdt/1337DAY-ID-25438	*EXPLOIT*
+|     	CVE-2019-6110	4.0	https://vulners.com/cve/CVE-2019-6110
+|     	CVE-2019-6109	4.0	https://vulners.com/cve/CVE-2019-6109
+|     	CVE-2018-20685	2.6	https://vulners.com/cve/CVE-2018-20685
+|     	SSV:92581	2.1	https://vulners.com/seebug/SSV:92581	*EXPLOIT*
+|     	CVE-2016-10011	2.1	https://vulners.com/cve/CVE-2016-10011
+|     	PACKETSTORM:151227	0.0	https://vulners.com/packetstorm/PACKETSTORM:151227	*EXPLOIT*
+|     	PACKETSTORM:140261	0.0	https://vulners.com/packetstorm/PACKETSTORM:140261	*EXPLOIT*
+|     	PACKETSTORM:138006	0.0	https://vulners.com/packetstorm/PACKETSTORM:138006	*EXPLOIT*
+|     	PACKETSTORM:137942	0.0	https://vulners.com/packetstorm/PACKETSTORM:137942	*EXPLOIT*
+|     	MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-	0.0	https://vulners.com/metasploit/MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-	*EXPLOIT*
+|_    	1337DAY-ID-30937	0.0	https://vulners.com/zdt/1337DAY-ID-30937	*EXPLOIT*
+53/tcp open  domain  dnsmasq 2.75
+| vulners: 
+|   cpe:/a:thekelleys:dnsmasq:2.75: 
+|     	CVE-2020-25682	8.3	https://vulners.com/cve/CVE-2020-25682
+|     	CVE-2020-25681	8.3	https://vulners.com/cve/CVE-2020-25681
+|     	SSV:96623	7.8	https://vulners.com/seebug/SSV:96623	*EXPLOIT*
+|     	EXPLOITPACK:708148DF89AFEA44750A9B84E292A6B9	7.8	https://vulners.com/exploitpack/EXPLOITPACK:708148DF89AFEA44750A9B84E292A6B9	*EXPLOIT*
+|     	EDB-ID:42946	7.8	https://vulners.com/exploitdb/EDB-ID:42946	*EXPLOIT*
+|     	CVE-2017-14496	7.8	https://vulners.com/cve/CVE-2017-14496
+|     	1337DAY-ID-28727	7.8	https://vulners.com/zdt/1337DAY-ID-28727	*EXPLOIT*
+|     	SSV:96620	7.5	https://vulners.com/seebug/SSV:96620	*EXPLOIT*
+|     	SSV:96619	7.5	https://vulners.com/seebug/SSV:96619	*EXPLOIT*
+|     	SSV:96618	7.5	https://vulners.com/seebug/SSV:96618	*EXPLOIT*
+|     	EXPLOITPACK:E661AED6AF5BCC1565D1CB0F9878E40B	7.5	https://vulners.com/exploitpack/EXPLOITPACK:E661AED6AF5BCC1565D1CB0F9878E40B	*EXPLOIT*
+|     	EXPLOITPACK:95340EB39AF331E01096F2B1CF7F1DE2	7.5	https://vulners.com/exploitpack/EXPLOITPACK:95340EB39AF331E01096F2B1CF7F1DE2	*EXPLOIT*
+|     	EXPLOITPACK:572F56450B83EECCA41D07EF1B33B48B	7.5	https://vulners.com/exploitpack/EXPLOITPACK:572F56450B83EECCA41D07EF1B33B48B	*EXPLOIT*
+|     	EDB-ID:42942	7.5	https://vulners.com/exploitdb/EDB-ID:42942	*EXPLOIT*
+|     	EDB-ID:42941	7.5	https://vulners.com/exploitdb/EDB-ID:42941	*EXPLOIT*
+|     	CVE-2017-14493	7.5	https://vulners.com/cve/CVE-2017-14493
+|     	CVE-2017-14492	7.5	https://vulners.com/cve/CVE-2017-14492
+|     	CVE-2017-14491	7.5	https://vulners.com/cve/CVE-2017-14491
+|     	1337DAY-ID-28724	7.5	https://vulners.com/zdt/1337DAY-ID-28724	*EXPLOIT*
+|     	1337DAY-ID-28723	7.5	https://vulners.com/zdt/1337DAY-ID-28723	*EXPLOIT*
+|     	1337DAY-ID-28720	7.5	https://vulners.com/zdt/1337DAY-ID-28720	*EXPLOIT*
+|     	CVE-2020-25687	7.1	https://vulners.com/cve/CVE-2020-25687
+|     	CVE-2020-25683	7.1	https://vulners.com/cve/CVE-2020-25683
+|     	SSV:96622	5.0	https://vulners.com/seebug/SSV:96622	*EXPLOIT*
+|     	EXPLOITPACK:C0456C7DF1625677A211CB9799B79F9A	5.0	https://vulners.com/exploitpack/EXPLOITPACK:C0456C7DF1625677A211CB9799B79F9A	*EXPLOIT*
+|     	EDB-ID:42945	5.0	https://vulners.com/exploitdb/EDB-ID:42945	*EXPLOIT*
+|     	CVE-2019-14513	5.0	https://vulners.com/cve/CVE-2019-14513
+|     	CVE-2017-15107	5.0	https://vulners.com/cve/CVE-2017-15107
+|     	CVE-2017-14495	5.0	https://vulners.com/cve/CVE-2017-14495
+|     	CVE-2017-13704	5.0	https://vulners.com/cve/CVE-2017-13704
+|     	CVE-2015-8899	5.0	https://vulners.com/cve/CVE-2015-8899
+|     	1337DAY-ID-28726	5.0	https://vulners.com/zdt/1337DAY-ID-28726	*EXPLOIT*
+|     	SSV:96621	4.3	https://vulners.com/seebug/SSV:96621	*EXPLOIT*
+|     	EXPLOITPACK:22D470FAFA79A3DB978CC3F8766CC759	4.3	https://vulners.com/exploitpack/EXPLOITPACK:22D470FAFA79A3DB978CC3F8766CC759	*EXPLOIT*
+|     	CVE-2021-3448	4.3	https://vulners.com/cve/CVE-2021-3448
+|     	CVE-2020-25686	4.3	https://vulners.com/cve/CVE-2020-25686
+|     	CVE-2020-25685	4.3	https://vulners.com/cve/CVE-2020-25685
+|     	CVE-2020-25684	4.3	https://vulners.com/cve/CVE-2020-25684
+|     	CVE-2019-14834	4.3	https://vulners.com/cve/CVE-2019-14834
+|     	CVE-2017-14494	4.3	https://vulners.com/cve/CVE-2017-14494
+|     	CBF3EF2D-3A5B-5110-A374-4A5ADE9AC91A	4.3	https://vulners.com/githubexploit/CBF3EF2D-3A5B-5110-A374-4A5ADE9AC91A	*EXPLOIT*
+|     	1337DAY-ID-28725	4.3	https://vulners.com/zdt/1337DAY-ID-28725	*EXPLOIT*
+|     	PACKETSTORM:144480	0.0	https://vulners.com/packetstorm/PACKETSTORM:144480	*EXPLOIT*
+|     	PACKETSTORM:144479	0.0	https://vulners.com/packetstorm/PACKETSTORM:144479	*EXPLOIT*
+|     	PACKETSTORM:144473	0.0	https://vulners.com/packetstorm/PACKETSTORM:144473	*EXPLOIT*
+|     	PACKETSTORM:144471	0.0	https://vulners.com/packetstorm/PACKETSTORM:144471	*EXPLOIT*
+|     	PACKETSTORM:144468	0.0	https://vulners.com/packetstorm/PACKETSTORM:144468	*EXPLOIT*
+|_    	PACKETSTORM:144462	0.0	https://vulners.com/packetstorm/PACKETSTORM:144462	*EXPLOIT*
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.10.10.11
+Host is up (0.0079s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:7.2p2: 
+|     	PACKETSTORM:140070	7.8	https://vulners.com/packetstorm/PACKETSTORM:140070	*EXPLOIT*
+|     	EXPLOITPACK:5BCA798C6BA71FAE29334297EC0B6A09	7.8	https://vulners.com/exploitpack/EXPLOITPACK:5BCA798C6BA71FAE29334297EC0B6A09	*EXPLOIT*
+|     	EDB-ID:40888	7.8	https://vulners.com/exploitdb/EDB-ID:40888	*EXPLOIT*
+|     	CVE-2016-8858	7.8	https://vulners.com/cve/CVE-2016-8858
+|     	CVE-2016-6515	7.8	https://vulners.com/cve/CVE-2016-6515
+|     	1337DAY-ID-26494	7.8	https://vulners.com/zdt/1337DAY-ID-26494	*EXPLOIT*
+|     	SSV:92579	7.5	https://vulners.com/seebug/SSV:92579	*EXPLOIT*
+|     	CVE-2016-10009	7.5	https://vulners.com/cve/CVE-2016-10009
+|     	1337DAY-ID-26576	7.5	https://vulners.com/zdt/1337DAY-ID-26576	*EXPLOIT*
+|     	SSV:92582	7.2	https://vulners.com/seebug/SSV:92582	*EXPLOIT*
+|     	CVE-2016-10012	7.2	https://vulners.com/cve/CVE-2016-10012
+|     	CVE-2015-8325	7.2	https://vulners.com/cve/CVE-2015-8325
+|     	SSV:92580	6.9	https://vulners.com/seebug/SSV:92580	*EXPLOIT*
+|     	CVE-2016-10010	6.9	https://vulners.com/cve/CVE-2016-10010
+|     	1337DAY-ID-26577	6.9	https://vulners.com/zdt/1337DAY-ID-26577	*EXPLOIT*
+|     	EXPLOITPACK:98FE96309F9524B8C84C508837551A19	5.8	https://vulners.com/exploitpack/EXPLOITPACK:98FE96309F9524B8C84C508837551A19	*EXPLOIT*
+|     	EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97	5.8	https://vulners.com/exploitpack/EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97	*EXPLOIT*
+|     	EDB-ID:46516	5.8	https://vulners.com/exploitdb/EDB-ID:46516	*EXPLOIT*
+|     	EDB-ID:46193	5.8	https://vulners.com/exploitdb/EDB-ID:46193	*EXPLOIT*
+|     	CVE-2019-6111	5.8	https://vulners.com/cve/CVE-2019-6111
+|     	1337DAY-ID-32328	5.8	https://vulners.com/zdt/1337DAY-ID-32328	*EXPLOIT*
+|     	1337DAY-ID-32009	5.8	https://vulners.com/zdt/1337DAY-ID-32009	*EXPLOIT*
+|     	SSV:91041	5.5	https://vulners.com/seebug/SSV:91041	*EXPLOIT*
+|     	PACKETSTORM:140019	5.5	https://vulners.com/packetstorm/PACKETSTORM:140019	*EXPLOIT*
+|     	PACKETSTORM:136234	5.5	https://vulners.com/packetstorm/PACKETSTORM:136234	*EXPLOIT*
+|     	EXPLOITPACK:F92411A645D85F05BDBD274FD222226F	5.5	https://vulners.com/exploitpack/EXPLOITPACK:F92411A645D85F05BDBD274FD222226F	*EXPLOIT*
+|     	EXPLOITPACK:9F2E746846C3C623A27A441281EAD138	5.5	https://vulners.com/exploitpack/EXPLOITPACK:9F2E746846C3C623A27A441281EAD138	*EXPLOIT*
+|     	EXPLOITPACK:1902C998CBF9154396911926B4C3B330	5.5	https://vulners.com/exploitpack/EXPLOITPACK:1902C998CBF9154396911926B4C3B330	*EXPLOIT*
+|     	EDB-ID:40858	5.5	https://vulners.com/exploitdb/EDB-ID:40858	*EXPLOIT*
+|     	EDB-ID:40119	5.5	https://vulners.com/exploitdb/EDB-ID:40119	*EXPLOIT*
+|     	CVE-2016-3115	5.5	https://vulners.com/cve/CVE-2016-3115
+|     	SSH_ENUM	5.0	https://vulners.com/canvas/SSH_ENUM	*EXPLOIT*
+|     	PACKETSTORM:150621	5.0	https://vulners.com/packetstorm/PACKETSTORM:150621	*EXPLOIT*
+|     	EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0	5.0	https://vulners.com/exploitpack/EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0	*EXPLOIT*
+|     	EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283	5.0	https://vulners.com/exploitpack/EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283	*EXPLOIT*
+|     	EDB-ID:45939	5.0	https://vulners.com/exploitdb/EDB-ID:45939	*EXPLOIT*
+|     	EDB-ID:45233	5.0	https://vulners.com/exploitdb/EDB-ID:45233	*EXPLOIT*
+|     	CVE-2018-15919	5.0	https://vulners.com/cve/CVE-2018-15919
+|     	CVE-2018-15473	5.0	https://vulners.com/cve/CVE-2018-15473
+|     	CVE-2017-15906	5.0	https://vulners.com/cve/CVE-2017-15906
+|     	CVE-2016-10708	5.0	https://vulners.com/cve/CVE-2016-10708
+|     	1337DAY-ID-31730	5.0	https://vulners.com/zdt/1337DAY-ID-31730	*EXPLOIT*
+|     	CVE-2021-41617	4.4	https://vulners.com/cve/CVE-2021-41617
+|     	EXPLOITPACK:802AF3229492E147A5F09C7F2B27C6DF	4.3	https://vulners.com/exploitpack/EXPLOITPACK:802AF3229492E147A5F09C7F2B27C6DF	*EXPLOIT*
+|     	EXPLOITPACK:5652DDAA7FE452E19AC0DC1CD97BA3EF	4.3	https://vulners.com/exploitpack/EXPLOITPACK:5652DDAA7FE452E19AC0DC1CD97BA3EF	*EXPLOIT*
+|     	EDB-ID:40113	4.3	https://vulners.com/exploitdb/EDB-ID:40113	*EXPLOIT*
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|     	CVE-2016-6210	4.3	https://vulners.com/cve/CVE-2016-6210
+|     	1337DAY-ID-25440	4.3	https://vulners.com/zdt/1337DAY-ID-25440	*EXPLOIT*
+|     	1337DAY-ID-25438	4.3	https://vulners.com/zdt/1337DAY-ID-25438	*EXPLOIT*
+|     	CVE-2019-6110	4.0	https://vulners.com/cve/CVE-2019-6110
+|     	CVE-2019-6109	4.0	https://vulners.com/cve/CVE-2019-6109
+|     	CVE-2018-20685	2.6	https://vulners.com/cve/CVE-2018-20685
+|     	SSV:92581	2.1	https://vulners.com/seebug/SSV:92581	*EXPLOIT*
+|     	CVE-2016-10011	2.1	https://vulners.com/cve/CVE-2016-10011
+|     	PACKETSTORM:151227	0.0	https://vulners.com/packetstorm/PACKETSTORM:151227	*EXPLOIT*
+|     	PACKETSTORM:140261	0.0	https://vulners.com/packetstorm/PACKETSTORM:140261	*EXPLOIT*
+|     	PACKETSTORM:138006	0.0	https://vulners.com/packetstorm/PACKETSTORM:138006	*EXPLOIT*
+|     	PACKETSTORM:137942	0.0	https://vulners.com/packetstorm/PACKETSTORM:137942	*EXPLOIT*
+|     	MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-	0.0	https://vulners.com/metasploit/MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-	*EXPLOIT*
+|_    	1337DAY-ID-30937	0.0	https://vulners.com/zdt/1337DAY-ID-30937	*EXPLOIT*
+53/tcp open  domain  dnsmasq 2.75
+| vulners: 
+|   cpe:/a:thekelleys:dnsmasq:2.75: 
+|     	CVE-2020-25682	8.3	https://vulners.com/cve/CVE-2020-25682
+|     	CVE-2020-25681	8.3	https://vulners.com/cve/CVE-2020-25681
+|     	SSV:96623	7.8	https://vulners.com/seebug/SSV:96623	*EXPLOIT*
+|     	EXPLOITPACK:708148DF89AFEA44750A9B84E292A6B9	7.8	https://vulners.com/exploitpack/EXPLOITPACK:708148DF89AFEA44750A9B84E292A6B9	*EXPLOIT*
+|     	EDB-ID:42946	7.8	https://vulners.com/exploitdb/EDB-ID:42946	*EXPLOIT*
+|     	CVE-2017-14496	7.8	https://vulners.com/cve/CVE-2017-14496
+|     	1337DAY-ID-28727	7.8	https://vulners.com/zdt/1337DAY-ID-28727	*EXPLOIT*
+|     	SSV:96620	7.5	https://vulners.com/seebug/SSV:96620	*EXPLOIT*
+|     	SSV:96619	7.5	https://vulners.com/seebug/SSV:96619	*EXPLOIT*
+|     	SSV:96618	7.5	https://vulners.com/seebug/SSV:96618	*EXPLOIT*
+|     	EXPLOITPACK:E661AED6AF5BCC1565D1CB0F9878E40B	7.5	https://vulners.com/exploitpack/EXPLOITPACK:E661AED6AF5BCC1565D1CB0F9878E40B	*EXPLOIT*
+|     	EXPLOITPACK:95340EB39AF331E01096F2B1CF7F1DE2	7.5	https://vulners.com/exploitpack/EXPLOITPACK:95340EB39AF331E01096F2B1CF7F1DE2	*EXPLOIT*
+|     	EXPLOITPACK:572F56450B83EECCA41D07EF1B33B48B	7.5	https://vulners.com/exploitpack/EXPLOITPACK:572F56450B83EECCA41D07EF1B33B48B	*EXPLOIT*
+|     	EDB-ID:42942	7.5	https://vulners.com/exploitdb/EDB-ID:42942	*EXPLOIT*
+|     	EDB-ID:42941	7.5	https://vulners.com/exploitdb/EDB-ID:42941	*EXPLOIT*
+|     	CVE-2017-14493	7.5	https://vulners.com/cve/CVE-2017-14493
+|     	CVE-2017-14492	7.5	https://vulners.com/cve/CVE-2017-14492
+|     	CVE-2017-14491	7.5	https://vulners.com/cve/CVE-2017-14491
+|     	1337DAY-ID-28724	7.5	https://vulners.com/zdt/1337DAY-ID-28724	*EXPLOIT*
+|     	1337DAY-ID-28723	7.5	https://vulners.com/zdt/1337DAY-ID-28723	*EXPLOIT*
+|     	1337DAY-ID-28720	7.5	https://vulners.com/zdt/1337DAY-ID-28720	*EXPLOIT*
+|     	CVE-2020-25687	7.1	https://vulners.com/cve/CVE-2020-25687
+|     	CVE-2020-25683	7.1	https://vulners.com/cve/CVE-2020-25683
+|     	SSV:96622	5.0	https://vulners.com/seebug/SSV:96622	*EXPLOIT*
+|     	EXPLOITPACK:C0456C7DF1625677A211CB9799B79F9A	5.0	https://vulners.com/exploitpack/EXPLOITPACK:C0456C7DF1625677A211CB9799B79F9A	*EXPLOIT*
+|     	EDB-ID:42945	5.0	https://vulners.com/exploitdb/EDB-ID:42945	*EXPLOIT*
+|     	CVE-2019-14513	5.0	https://vulners.com/cve/CVE-2019-14513
+|     	CVE-2017-15107	5.0	https://vulners.com/cve/CVE-2017-15107
+|     	CVE-2017-14495	5.0	https://vulners.com/cve/CVE-2017-14495
+|     	CVE-2017-13704	5.0	https://vulners.com/cve/CVE-2017-13704
+|     	CVE-2015-8899	5.0	https://vulners.com/cve/CVE-2015-8899
+|     	1337DAY-ID-28726	5.0	https://vulners.com/zdt/1337DAY-ID-28726	*EXPLOIT*
+|     	SSV:96621	4.3	https://vulners.com/seebug/SSV:96621	*EXPLOIT*
+|     	EXPLOITPACK:22D470FAFA79A3DB978CC3F8766CC759	4.3	https://vulners.com/exploitpack/EXPLOITPACK:22D470FAFA79A3DB978CC3F8766CC759	*EXPLOIT*
+|     	CVE-2021-3448	4.3	https://vulners.com/cve/CVE-2021-3448
+|     	CVE-2020-25686	4.3	https://vulners.com/cve/CVE-2020-25686
+|     	CVE-2020-25685	4.3	https://vulners.com/cve/CVE-2020-25685
+|     	CVE-2020-25684	4.3	https://vulners.com/cve/CVE-2020-25684
+|     	CVE-2019-14834	4.3	https://vulners.com/cve/CVE-2019-14834
+|     	CVE-2017-14494	4.3	https://vulners.com/cve/CVE-2017-14494
+|     	CBF3EF2D-3A5B-5110-A374-4A5ADE9AC91A	4.3	https://vulners.com/githubexploit/CBF3EF2D-3A5B-5110-A374-4A5ADE9AC91A	*EXPLOIT*
+|     	1337DAY-ID-28725	4.3	https://vulners.com/zdt/1337DAY-ID-28725	*EXPLOIT*
+|     	PACKETSTORM:144480	0.0	https://vulners.com/packetstorm/PACKETSTORM:144480	*EXPLOIT*
+|     	PACKETSTORM:144479	0.0	https://vulners.com/packetstorm/PACKETSTORM:144479	*EXPLOIT*
+|     	PACKETSTORM:144473	0.0	https://vulners.com/packetstorm/PACKETSTORM:144473	*EXPLOIT*
+|     	PACKETSTORM:144471	0.0	https://vulners.com/packetstorm/PACKETSTORM:144471	*EXPLOIT*
+|     	PACKETSTORM:144468	0.0	https://vulners.com/packetstorm/PACKETSTORM:144468	*EXPLOIT*
+|_    	PACKETSTORM:144462	0.0	https://vulners.com/packetstorm/PACKETSTORM:144462	*EXPLOIT*
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.10.10.22
+Host is up (0.0073s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT    STATE SERVICE     VERSION
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+Service Info: Host: LINUXSERVER
+
+Host script results:
+|_smb-vuln-ms10-054: false
+| smb-vuln-regsvc-dos: 
+|   VULNERABLE:
+|   Service regsvc in Microsoft Windows systems vulnerable to denial of service
+|     State: VULNERABLE
+|       The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference
+|       pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes
+|       while working on smb-enum-sessions.
+|_          
+|_smb-vuln-ms10-061: false
+
+Nmap scan report for 10.10.10.24
+Host is up (0.0080s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT      STATE SERVICE VERSION
+23023/tcp open  unknown
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP: 
+|     HTTP/1.1 400 Illegal character CNTL=0x0
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 69
+|     Connection: close
+|     <h1>Bad Message 400</h1><pre>reason: Illegal character CNTL=0x0</pre>
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Date: Mon, 14 Nov 2022 18:23:51 GMT
+|     Server: Netwave IP Camera
+|     Content-Type: text/html;charset=utf-8
+|     Content-Length: 69
+|     Netwave security camera
+|     <br/>
+|     href="videostream.cgi">Live feed</a>
+|   HTTPOptions: 
+|     HTTP/1.1 404 Not Found
+|     Date: Mon, 14 Nov 2022 18:23:51 GMT
+|     Server: Netwave IP Camera
+|     Content-Length: 0
+|   Help: 
+|     HTTP/1.1 400 No URI
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 49
+|     Connection: close
+|     <h1>Bad Message 400</h1><pre>reason: No URI</pre>
+|   RPCCheck: 
+|     HTTP/1.1 400 Illegal character OTEXT=0x80
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 71
+|     Connection: close
+|     <h1>Bad Message 400</h1><pre>reason: Illegal character OTEXT=0x80</pre>
+|   RTSPRequest: 
+|     HTTP/1.1 400 Unknown Version
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 58
+|     Connection: close
+|     <h1>Bad Message 400</h1><pre>reason: Unknown Version</pre>
+|   SSLSessionReq: 
+|     HTTP/1.1 400 Illegal character CNTL=0x16
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 70
+|     Connection: close
+|     <h1>Bad Message 400</h1><pre>reason: Illegal character CNTL=0x16</pre>
+|   TerminalServerCookie: 
+|     HTTP/1.1 400 Illegal character CNTL=0x3
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 69
+|     Connection: close
+|_    <h1>Bad Message 400</h1><pre>reason: Illegal character CNTL=0x3</pre>
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port23023-TCP:V=7.93%I=7%D=11/14%Time=637287B7%P=arm-apple-darwin22.1.0
+SF:%r(GetRequest,D3,"HTTP/1\.1\x20200\x20OK\r\nDate:\x20Mon,\x2014\x20Nov\
+SF:x202022\x2018:23:51\x20GMT\r\nServer:\x20Netwave\x20IP\x20Camera\r\nCon
+SF:tent-Type:\x20text/html;charset=utf-8\r\nContent-Length:\x2069\r\n\r\nN
+SF:etwave\x20security\x20camera\n<br/>\n<a\x20href=\"videostream\.cgi\">Li
+SF:ve\x20feed</a>")%r(HTTPOptions,6D,"HTTP/1\.1\x20404\x20Not\x20Found\r\n
+SF:Date:\x20Mon,\x2014\x20Nov\x202022\x2018:23:51\x20GMT\r\nServer:\x20Net
+SF:wave\x20IP\x20Camera\r\nContent-Length:\x200\r\n\r\n")%r(RTSPRequest,AD
+SF:,"HTTP/1\.1\x20400\x20Unknown\x20Version\r\nContent-Type:\x20text/html;
+SF:charset=iso-8859-1\r\nContent-Length:\x2058\r\nConnection:\x20close\r\n
+SF:\r\n<h1>Bad\x20Message\x20400</h1><pre>reason:\x20Unknown\x20Version</p
+SF:re>")%r(RPCCheck,C7,"HTTP/1\.1\x20400\x20Illegal\x20character\x20OTEXT=
+SF:0x80\r\nContent-Type:\x20text/html;charset=iso-8859-1\r\nContent-Length
+SF::\x2071\r\nConnection:\x20close\r\n\r\n<h1>Bad\x20Message\x20400</h1><p
+SF:re>reason:\x20Illegal\x20character\x20OTEXT=0x80</pre>")%r(DNSVersionBi
+SF:ndReqTCP,C3,"HTTP/1\.1\x20400\x20Illegal\x20character\x20CNTL=0x0\r\nCo
+SF:ntent-Type:\x20text/html;charset=iso-8859-1\r\nContent-Length:\x2069\r\
+SF:nConnection:\x20close\r\n\r\n<h1>Bad\x20Message\x20400</h1><pre>reason:
+SF:\x20Illegal\x20character\x20CNTL=0x0</pre>")%r(DNSStatusRequestTCP,C3,"
+SF:HTTP/1\.1\x20400\x20Illegal\x20character\x20CNTL=0x0\r\nContent-Type:\x
+SF:20text/html;charset=iso-8859-1\r\nContent-Length:\x2069\r\nConnection:\
+SF:x20close\r\n\r\n<h1>Bad\x20Message\x20400</h1><pre>reason:\x20Illegal\x
+SF:20character\x20CNTL=0x0</pre>")%r(Help,9B,"HTTP/1\.1\x20400\x20No\x20UR
+SF:I\r\nContent-Type:\x20text/html;charset=iso-8859-1\r\nContent-Length:\x
+SF:2049\r\nConnection:\x20close\r\n\r\n<h1>Bad\x20Message\x20400</h1><pre>
+SF:reason:\x20No\x20URI</pre>")%r(SSLSessionReq,C5,"HTTP/1\.1\x20400\x20Il
+SF:legal\x20character\x20CNTL=0x16\r\nContent-Type:\x20text/html;charset=i
+SF:so-8859-1\r\nContent-Length:\x2070\r\nConnection:\x20close\r\n\r\n<h1>B
+SF:ad\x20Message\x20400</h1><pre>reason:\x20Illegal\x20character\x20CNTL=0
+SF:x16</pre>")%r(TerminalServerCookie,C3,"HTTP/1\.1\x20400\x20Illegal\x20c
+SF:haracter\x20CNTL=0x3\r\nContent-Type:\x20text/html;charset=iso-8859-1\r
+SF:\nContent-Length:\x2069\r\nConnection:\x20close\r\n\r\n<h1>Bad\x20Messa
+SF:ge\x20400</h1><pre>reason:\x20Illegal\x20character\x20CNTL=0x3</pre>");
+
+Nmap scan report for 10.10.10.26
+Host is up (0.0078s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT      STATE SERVICE VERSION
+15042/tcp open  unknown
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP: 
+|     HTTP/1.1 400 Illegal character CNTL=0x0
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 69
+|     Connection: close
+|     <h1>Bad Message 400</h1><pre>reason: Illegal character CNTL=0x0</pre>
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Date: Mon, 14 Nov 2022 18:23:51 GMT
+|     Server: Netwave IP Camera
+|     Content-Type: text/html;charset=utf-8
+|     Content-Length: 69
+|     Netwave security camera
+|     <br/>
+|     href="videostream.cgi">Live feed</a>
+|   HTTPOptions: 
+|     HTTP/1.1 404 Not Found
+|     Date: Mon, 14 Nov 2022 18:23:51 GMT
+|     Server: Netwave IP Camera
+|     Content-Length: 0
+|   Help: 
+|     HTTP/1.1 400 No URI
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 49
+|     Connection: close
+|     <h1>Bad Message 400</h1><pre>reason: No URI</pre>
+|   RPCCheck: 
+|     HTTP/1.1 400 Illegal character OTEXT=0x80
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 71
+|     Connection: close
+|     <h1>Bad Message 400</h1><pre>reason: Illegal character OTEXT=0x80</pre>
+|   RTSPRequest: 
+|     HTTP/1.1 400 Unknown Version
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 58
+|     Connection: close
+|     <h1>Bad Message 400</h1><pre>reason: Unknown Version</pre>
+|   SSLSessionReq: 
+|     HTTP/1.1 400 Illegal character CNTL=0x16
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 70
+|     Connection: close
+|     <h1>Bad Message 400</h1><pre>reason: Illegal character CNTL=0x16</pre>
+|   TerminalServerCookie: 
+|     HTTP/1.1 400 Illegal character CNTL=0x3
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 69
+|     Connection: close
+|_    <h1>Bad Message 400</h1><pre>reason: Illegal character CNTL=0x3</pre>
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port15042-TCP:V=7.93%I=7%D=11/14%Time=637287B7%P=arm-apple-darwin22.1.0
+SF:%r(GetRequest,D3,"HTTP/1\.1\x20200\x20OK\r\nDate:\x20Mon,\x2014\x20Nov\
+SF:x202022\x2018:23:51\x20GMT\r\nServer:\x20Netwave\x20IP\x20Camera\r\nCon
+SF:tent-Type:\x20text/html;charset=utf-8\r\nContent-Length:\x2069\r\n\r\nN
+SF:etwave\x20security\x20camera\n<br/>\n<a\x20href=\"videostream\.cgi\">Li
+SF:ve\x20feed</a>")%r(HTTPOptions,6D,"HTTP/1\.1\x20404\x20Not\x20Found\r\n
+SF:Date:\x20Mon,\x2014\x20Nov\x202022\x2018:23:51\x20GMT\r\nServer:\x20Net
+SF:wave\x20IP\x20Camera\r\nContent-Length:\x200\r\n\r\n")%r(RTSPRequest,AD
+SF:,"HTTP/1\.1\x20400\x20Unknown\x20Version\r\nContent-Type:\x20text/html;
+SF:charset=iso-8859-1\r\nContent-Length:\x2058\r\nConnection:\x20close\r\n
+SF:\r\n<h1>Bad\x20Message\x20400</h1><pre>reason:\x20Unknown\x20Version</p
+SF:re>")%r(RPCCheck,C7,"HTTP/1\.1\x20400\x20Illegal\x20character\x20OTEXT=
+SF:0x80\r\nContent-Type:\x20text/html;charset=iso-8859-1\r\nContent-Length
+SF::\x2071\r\nConnection:\x20close\r\n\r\n<h1>Bad\x20Message\x20400</h1><p
+SF:re>reason:\x20Illegal\x20character\x20OTEXT=0x80</pre>")%r(DNSVersionBi
+SF:ndReqTCP,C3,"HTTP/1\.1\x20400\x20Illegal\x20character\x20CNTL=0x0\r\nCo
+SF:ntent-Type:\x20text/html;charset=iso-8859-1\r\nContent-Length:\x2069\r\
+SF:nConnection:\x20close\r\n\r\n<h1>Bad\x20Message\x20400</h1><pre>reason:
+SF:\x20Illegal\x20character\x20CNTL=0x0</pre>")%r(DNSStatusRequestTCP,C3,"
+SF:HTTP/1\.1\x20400\x20Illegal\x20character\x20CNTL=0x0\r\nContent-Type:\x
+SF:20text/html;charset=iso-8859-1\r\nContent-Length:\x2069\r\nConnection:\
+SF:x20close\r\n\r\n<h1>Bad\x20Message\x20400</h1><pre>reason:\x20Illegal\x
+SF:20character\x20CNTL=0x0</pre>")%r(Help,9B,"HTTP/1\.1\x20400\x20No\x20UR
+SF:I\r\nContent-Type:\x20text/html;charset=iso-8859-1\r\nContent-Length:\x
+SF:2049\r\nConnection:\x20close\r\n\r\n<h1>Bad\x20Message\x20400</h1><pre>
+SF:reason:\x20No\x20URI</pre>")%r(SSLSessionReq,C5,"HTTP/1\.1\x20400\x20Il
+SF:legal\x20character\x20CNTL=0x16\r\nContent-Type:\x20text/html;charset=i
+SF:so-8859-1\r\nContent-Length:\x2070\r\nConnection:\x20close\r\n\r\n<h1>B
+SF:ad\x20Message\x20400</h1><pre>reason:\x20Illegal\x20character\x20CNTL=0
+SF:x16</pre>")%r(TerminalServerCookie,C3,"HTTP/1\.1\x20400\x20Illegal\x20c
+SF:haracter\x20CNTL=0x3\r\nContent-Type:\x20text/html;charset=iso-8859-1\r
+SF:\nContent-Length:\x2069\r\nConnection:\x20close\r\n\r\n<h1>Bad\x20Messa
+SF:ge\x20400</h1><pre>reason:\x20Illegal\x20character\x20CNTL=0x3</pre>");
+
+Nmap scan report for 10.10.10.34
+Host is up (0.0079s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT     STATE SERVICE                  VERSION
+1883/tcp open  mosquitto version 2.0.15
+| mqtt-subscribe: 
+|   Topics and their most recent payloads: 
+|     $SYS/broker/load/messages/sent/5min: 7.91
+|     $SYS/broker/load/connections/1min: 0.92
+|     $SYS/broker/load/publish/sent/15min: 5.04
+|     $SYS/broker/load/messages/sent/15min: 5.24
+|     $SYS/broker/bytes/sent: 5824
+|     $SYS/broker/publish/bytes/received: 99453443
+|     $SYS/broker/load/sockets/15min: 0.15
+|     $SYS/broker/load/messages/received/5min: 7116.99
+|     $SYS/broker/load/bytes/received/1min: 129916.38
+|     $SYS/broker/publish/messages/received: 33151143
+|     $SYS/broker/load/publish/received/15min: 7584.85
+|     $SYS/broker/load/messages/received/15min: 7585.10
+|     $SYS/broker/load/bytes/sent/5min: 175.58
+|     $SYS/broker/load/bytes/sent/15min: 117.23
+|     tempReading: 291
+|     $SYS/broker/load/sockets/5min: 0.32
+|     $SYS/broker/load/sockets/1min: 0.92
+|     $SYS/broker/load/messages/sent/1min: 1.50
+|     $SYS/broker/version: mosquitto version 2.0.15
+|     $SYS/broker/load/connections/5min: 0.32
+|     $SYS/broker/load/bytes/sent/1min: 17.03
+|     $SYS/broker/uptime: 890714 seconds
+|     $SYS/broker/load/bytes/received/15min: 136531.82
+|     $SYS/broker/load/bytes/received/5min: 128105.70
+|     $SYS/broker/bytes/received: 596721157
+|     $SYS/broker/messages/sent: 265
+|     $SYS/broker/messages/received: 33151183
+|     $SYS/broker/load/publish/sent/1min: 0.58
+|     $SYS/broker/load/publish/received/5min: 7116.53
+|     $SYS/broker/load/publish/sent/5min: 7.53
+|     $SYS/broker/load/messages/received/1min: 7217.58
+|     $SYS/broker/load/publish/received/1min: 7216.65
+|_    $SYS/broker/load/connections/15min: 0.16
+
+Nmap scan report for 10.10.10.48
+Host is up (0.0076s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Node.js Express framework
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.48
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://10.10.10.48:80/
+|     Form id: update-interval
+|_    Form action: /api/config
+| http-vuln-cve2011-3192: 
+|   VULNERABLE:
+|   Apache byterange filter DoS
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2011-3192  BID:49303
+|       The Apache web server is vulnerable to a denial of service attack when numerous
+|       overlapping byte ranges are requested.
+|     Disclosure date: 2011-08-19
+|     References:
+|       https://www.tenable.com/plugins/nessus/55976
+|       https://www.securityfocus.com/bid/49303
+|       https://seclists.org/fulldisclosure/2011/Aug/175
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192
+
+Nmap scan report for 10.10.10.53
+Host is up (0.0076s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT     STATE    SERVICE VERSION
+21/tcp   open     ftp     vsftpd 2.3.4
+22/tcp   open     ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:7.2p2: 
+|     	PACKETSTORM:140070	7.8	https://vulners.com/packetstorm/PACKETSTORM:140070	*EXPLOIT*
+|     	EXPLOITPACK:5BCA798C6BA71FAE29334297EC0B6A09	7.8	https://vulners.com/exploitpack/EXPLOITPACK:5BCA798C6BA71FAE29334297EC0B6A09	*EXPLOIT*
+|     	EDB-ID:40888	7.8	https://vulners.com/exploitdb/EDB-ID:40888	*EXPLOIT*
+|     	CVE-2016-8858	7.8	https://vulners.com/cve/CVE-2016-8858
+|     	CVE-2016-6515	7.8	https://vulners.com/cve/CVE-2016-6515
+|     	1337DAY-ID-26494	7.8	https://vulners.com/zdt/1337DAY-ID-26494	*EXPLOIT*
+|     	SSV:92579	7.5	https://vulners.com/seebug/SSV:92579	*EXPLOIT*
+|     	CVE-2016-10009	7.5	https://vulners.com/cve/CVE-2016-10009
+|     	1337DAY-ID-26576	7.5	https://vulners.com/zdt/1337DAY-ID-26576	*EXPLOIT*
+|     	SSV:92582	7.2	https://vulners.com/seebug/SSV:92582	*EXPLOIT*
+|     	CVE-2016-10012	7.2	https://vulners.com/cve/CVE-2016-10012
+|     	CVE-2015-8325	7.2	https://vulners.com/cve/CVE-2015-8325
+|     	SSV:92580	6.9	https://vulners.com/seebug/SSV:92580	*EXPLOIT*
+|     	CVE-2016-10010	6.9	https://vulners.com/cve/CVE-2016-10010
+|     	1337DAY-ID-26577	6.9	https://vulners.com/zdt/1337DAY-ID-26577	*EXPLOIT*
+|     	EXPLOITPACK:98FE96309F9524B8C84C508837551A19	5.8	https://vulners.com/exploitpack/EXPLOITPACK:98FE96309F9524B8C84C508837551A19	*EXPLOIT*
+|     	EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97	5.8	https://vulners.com/exploitpack/EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97	*EXPLOIT*
+|     	EDB-ID:46516	5.8	https://vulners.com/exploitdb/EDB-ID:46516	*EXPLOIT*
+|     	EDB-ID:46193	5.8	https://vulners.com/exploitdb/EDB-ID:46193	*EXPLOIT*
+|     	CVE-2019-6111	5.8	https://vulners.com/cve/CVE-2019-6111
+|     	1337DAY-ID-32328	5.8	https://vulners.com/zdt/1337DAY-ID-32328	*EXPLOIT*
+|     	1337DAY-ID-32009	5.8	https://vulners.com/zdt/1337DAY-ID-32009	*EXPLOIT*
+|     	SSV:91041	5.5	https://vulners.com/seebug/SSV:91041	*EXPLOIT*
+|     	PACKETSTORM:140019	5.5	https://vulners.com/packetstorm/PACKETSTORM:140019	*EXPLOIT*
+|     	PACKETSTORM:136234	5.5	https://vulners.com/packetstorm/PACKETSTORM:136234	*EXPLOIT*
+|     	EXPLOITPACK:F92411A645D85F05BDBD274FD222226F	5.5	https://vulners.com/exploitpack/EXPLOITPACK:F92411A645D85F05BDBD274FD222226F	*EXPLOIT*
+|     	EXPLOITPACK:9F2E746846C3C623A27A441281EAD138	5.5	https://vulners.com/exploitpack/EXPLOITPACK:9F2E746846C3C623A27A441281EAD138	*EXPLOIT*
+|     	EXPLOITPACK:1902C998CBF9154396911926B4C3B330	5.5	https://vulners.com/exploitpack/EXPLOITPACK:1902C998CBF9154396911926B4C3B330	*EXPLOIT*
+|     	EDB-ID:40858	5.5	https://vulners.com/exploitdb/EDB-ID:40858	*EXPLOIT*
+|     	EDB-ID:40119	5.5	https://vulners.com/exploitdb/EDB-ID:40119	*EXPLOIT*
+|     	CVE-2016-3115	5.5	https://vulners.com/cve/CVE-2016-3115
+|     	SSH_ENUM	5.0	https://vulners.com/canvas/SSH_ENUM	*EXPLOIT*
+|     	PACKETSTORM:150621	5.0	https://vulners.com/packetstorm/PACKETSTORM:150621	*EXPLOIT*
+|     	EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0	5.0	https://vulners.com/exploitpack/EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0	*EXPLOIT*
+|     	EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283	5.0	https://vulners.com/exploitpack/EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283	*EXPLOIT*
+|     	EDB-ID:45939	5.0	https://vulners.com/exploitdb/EDB-ID:45939	*EXPLOIT*
+|     	EDB-ID:45233	5.0	https://vulners.com/exploitdb/EDB-ID:45233	*EXPLOIT*
+|     	CVE-2018-15919	5.0	https://vulners.com/cve/CVE-2018-15919
+|     	CVE-2018-15473	5.0	https://vulners.com/cve/CVE-2018-15473
+|     	CVE-2017-15906	5.0	https://vulners.com/cve/CVE-2017-15906
+|     	CVE-2016-10708	5.0	https://vulners.com/cve/CVE-2016-10708
+|     	1337DAY-ID-31730	5.0	https://vulners.com/zdt/1337DAY-ID-31730	*EXPLOIT*
+|     	CVE-2021-41617	4.4	https://vulners.com/cve/CVE-2021-41617
+|     	EXPLOITPACK:802AF3229492E147A5F09C7F2B27C6DF	4.3	https://vulners.com/exploitpack/EXPLOITPACK:802AF3229492E147A5F09C7F2B27C6DF	*EXPLOIT*
+|     	EXPLOITPACK:5652DDAA7FE452E19AC0DC1CD97BA3EF	4.3	https://vulners.com/exploitpack/EXPLOITPACK:5652DDAA7FE452E19AC0DC1CD97BA3EF	*EXPLOIT*
+|     	EDB-ID:40113	4.3	https://vulners.com/exploitdb/EDB-ID:40113	*EXPLOIT*
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|     	CVE-2016-6210	4.3	https://vulners.com/cve/CVE-2016-6210
+|     	1337DAY-ID-25440	4.3	https://vulners.com/zdt/1337DAY-ID-25440	*EXPLOIT*
+|     	1337DAY-ID-25438	4.3	https://vulners.com/zdt/1337DAY-ID-25438	*EXPLOIT*
+|     	CVE-2019-6110	4.0	https://vulners.com/cve/CVE-2019-6110
+|     	CVE-2019-6109	4.0	https://vulners.com/cve/CVE-2019-6109
+|     	CVE-2018-20685	2.6	https://vulners.com/cve/CVE-2018-20685
+|     	SSV:92581	2.1	https://vulners.com/seebug/SSV:92581	*EXPLOIT*
+|     	CVE-2016-10011	2.1	https://vulners.com/cve/CVE-2016-10011
+|     	PACKETSTORM:151227	0.0	https://vulners.com/packetstorm/PACKETSTORM:151227	*EXPLOIT*
+|     	PACKETSTORM:140261	0.0	https://vulners.com/packetstorm/PACKETSTORM:140261	*EXPLOIT*
+|     	PACKETSTORM:138006	0.0	https://vulners.com/packetstorm/PACKETSTORM:138006	*EXPLOIT*
+|     	PACKETSTORM:137942	0.0	https://vulners.com/packetstorm/PACKETSTORM:137942	*EXPLOIT*
+|     	MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-	0.0	https://vulners.com/metasploit/MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-	*EXPLOIT*
+|_    	1337DAY-ID-30937	0.0	https://vulners.com/zdt/1337DAY-ID-30937	*EXPLOIT*
+6200/tcp filtered lm-x
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.10.10.55
+Host is up (0.0076s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Node.js Express framework
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-vuln-cve2011-3192: 
+|   VULNERABLE:
+|   Apache byterange filter DoS
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2011-3192  BID:49303
+|       The Apache web server is vulnerable to a denial of service attack when numerous
+|       overlapping byte ranges are requested.
+|     Disclosure date: 2011-08-19
+|     References:
+|       https://www.tenable.com/plugins/nessus/55976
+|       https://www.securityfocus.com/bid/49303
+|       https://seclists.org/fulldisclosure/2011/Aug/175
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.55
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://10.10.10.55:80/
+|     Form id: update-interval
+|_    Form action: /api/config
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+
+Nmap scan report for 10.10.10.84
+Host is up (0.0082s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:7.2p2: 
+|     	PACKETSTORM:140070	7.8	https://vulners.com/packetstorm/PACKETSTORM:140070	*EXPLOIT*
+|     	EXPLOITPACK:5BCA798C6BA71FAE29334297EC0B6A09	7.8	https://vulners.com/exploitpack/EXPLOITPACK:5BCA798C6BA71FAE29334297EC0B6A09	*EXPLOIT*
+|     	EDB-ID:40888	7.8	https://vulners.com/exploitdb/EDB-ID:40888	*EXPLOIT*
+|     	CVE-2016-8858	7.8	https://vulners.com/cve/CVE-2016-8858
+|     	CVE-2016-6515	7.8	https://vulners.com/cve/CVE-2016-6515
+|     	1337DAY-ID-26494	7.8	https://vulners.com/zdt/1337DAY-ID-26494	*EXPLOIT*
+|     	SSV:92579	7.5	https://vulners.com/seebug/SSV:92579	*EXPLOIT*
+|     	CVE-2016-10009	7.5	https://vulners.com/cve/CVE-2016-10009
+|     	1337DAY-ID-26576	7.5	https://vulners.com/zdt/1337DAY-ID-26576	*EXPLOIT*
+|     	SSV:92582	7.2	https://vulners.com/seebug/SSV:92582	*EXPLOIT*
+|     	CVE-2016-10012	7.2	https://vulners.com/cve/CVE-2016-10012
+|     	CVE-2015-8325	7.2	https://vulners.com/cve/CVE-2015-8325
+|     	SSV:92580	6.9	https://vulners.com/seebug/SSV:92580	*EXPLOIT*
+|     	CVE-2016-10010	6.9	https://vulners.com/cve/CVE-2016-10010
+|     	1337DAY-ID-26577	6.9	https://vulners.com/zdt/1337DAY-ID-26577	*EXPLOIT*
+|     	EXPLOITPACK:98FE96309F9524B8C84C508837551A19	5.8	https://vulners.com/exploitpack/EXPLOITPACK:98FE96309F9524B8C84C508837551A19	*EXPLOIT*
+|     	EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97	5.8	https://vulners.com/exploitpack/EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97	*EXPLOIT*
+|     	EDB-ID:46516	5.8	https://vulners.com/exploitdb/EDB-ID:46516	*EXPLOIT*
+|     	EDB-ID:46193	5.8	https://vulners.com/exploitdb/EDB-ID:46193	*EXPLOIT*
+|     	CVE-2019-6111	5.8	https://vulners.com/cve/CVE-2019-6111
+|     	1337DAY-ID-32328	5.8	https://vulners.com/zdt/1337DAY-ID-32328	*EXPLOIT*
+|     	1337DAY-ID-32009	5.8	https://vulners.com/zdt/1337DAY-ID-32009	*EXPLOIT*
+|     	SSV:91041	5.5	https://vulners.com/seebug/SSV:91041	*EXPLOIT*
+|     	PACKETSTORM:140019	5.5	https://vulners.com/packetstorm/PACKETSTORM:140019	*EXPLOIT*
+|     	PACKETSTORM:136234	5.5	https://vulners.com/packetstorm/PACKETSTORM:136234	*EXPLOIT*
+|     	EXPLOITPACK:F92411A645D85F05BDBD274FD222226F	5.5	https://vulners.com/exploitpack/EXPLOITPACK:F92411A645D85F05BDBD274FD222226F	*EXPLOIT*
+|     	EXPLOITPACK:9F2E746846C3C623A27A441281EAD138	5.5	https://vulners.com/exploitpack/EXPLOITPACK:9F2E746846C3C623A27A441281EAD138	*EXPLOIT*
+|     	EXPLOITPACK:1902C998CBF9154396911926B4C3B330	5.5	https://vulners.com/exploitpack/EXPLOITPACK:1902C998CBF9154396911926B4C3B330	*EXPLOIT*
+|     	EDB-ID:40858	5.5	https://vulners.com/exploitdb/EDB-ID:40858	*EXPLOIT*
+|     	EDB-ID:40119	5.5	https://vulners.com/exploitdb/EDB-ID:40119	*EXPLOIT*
+|     	CVE-2016-3115	5.5	https://vulners.com/cve/CVE-2016-3115
+|     	SSH_ENUM	5.0	https://vulners.com/canvas/SSH_ENUM	*EXPLOIT*
+|     	PACKETSTORM:150621	5.0	https://vulners.com/packetstorm/PACKETSTORM:150621	*EXPLOIT*
+|     	EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0	5.0	https://vulners.com/exploitpack/EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0	*EXPLOIT*
+|     	EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283	5.0	https://vulners.com/exploitpack/EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283	*EXPLOIT*
+|     	EDB-ID:45939	5.0	https://vulners.com/exploitdb/EDB-ID:45939	*EXPLOIT*
+|     	EDB-ID:45233	5.0	https://vulners.com/exploitdb/EDB-ID:45233	*EXPLOIT*
+|     	CVE-2018-15919	5.0	https://vulners.com/cve/CVE-2018-15919
+|     	CVE-2018-15473	5.0	https://vulners.com/cve/CVE-2018-15473
+|     	CVE-2017-15906	5.0	https://vulners.com/cve/CVE-2017-15906
+|     	CVE-2016-10708	5.0	https://vulners.com/cve/CVE-2016-10708
+|     	1337DAY-ID-31730	5.0	https://vulners.com/zdt/1337DAY-ID-31730	*EXPLOIT*
+|     	CVE-2021-41617	4.4	https://vulners.com/cve/CVE-2021-41617
+|     	EXPLOITPACK:802AF3229492E147A5F09C7F2B27C6DF	4.3	https://vulners.com/exploitpack/EXPLOITPACK:802AF3229492E147A5F09C7F2B27C6DF	*EXPLOIT*
+|     	EXPLOITPACK:5652DDAA7FE452E19AC0DC1CD97BA3EF	4.3	https://vulners.com/exploitpack/EXPLOITPACK:5652DDAA7FE452E19AC0DC1CD97BA3EF	*EXPLOIT*
+|     	EDB-ID:40113	4.3	https://vulners.com/exploitdb/EDB-ID:40113	*EXPLOIT*
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|     	CVE-2016-6210	4.3	https://vulners.com/cve/CVE-2016-6210
+|     	1337DAY-ID-25440	4.3	https://vulners.com/zdt/1337DAY-ID-25440	*EXPLOIT*
+|     	1337DAY-ID-25438	4.3	https://vulners.com/zdt/1337DAY-ID-25438	*EXPLOIT*
+|     	CVE-2019-6110	4.0	https://vulners.com/cve/CVE-2019-6110
+|     	CVE-2019-6109	4.0	https://vulners.com/cve/CVE-2019-6109
+|     	CVE-2018-20685	2.6	https://vulners.com/cve/CVE-2018-20685
+|     	SSV:92581	2.1	https://vulners.com/seebug/SSV:92581	*EXPLOIT*
+|     	CVE-2016-10011	2.1	https://vulners.com/cve/CVE-2016-10011
+|     	PACKETSTORM:151227	0.0	https://vulners.com/packetstorm/PACKETSTORM:151227	*EXPLOIT*
+|     	PACKETSTORM:140261	0.0	https://vulners.com/packetstorm/PACKETSTORM:140261	*EXPLOIT*
+|     	PACKETSTORM:138006	0.0	https://vulners.com/packetstorm/PACKETSTORM:138006	*EXPLOIT*
+|     	PACKETSTORM:137942	0.0	https://vulners.com/packetstorm/PACKETSTORM:137942	*EXPLOIT*
+|     	MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-	0.0	https://vulners.com/metasploit/MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-	*EXPLOIT*
+|_    	1337DAY-ID-30937	0.0	https://vulners.com/zdt/1337DAY-ID-30937	*EXPLOIT*
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.10.10.132
+Host is up (0.0082s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+6379/tcp open  redis   Redis key-value store 3.0.6
+| vulners: 
+|   cpe:/a:redislabs:redis:3.0.6: 
+|     	CVE-2021-32626	6.5	https://vulners.com/cve/CVE-2021-32626
+|     	CVE-2019-10193	6.5	https://vulners.com/cve/CVE-2019-10193
+|     	CVE-2019-10192	6.5	https://vulners.com/cve/CVE-2019-10192
+|     	CVE-2021-32761	6.0	https://vulners.com/cve/CVE-2021-32761
+|     	CVE-2015-8080	5.0	https://vulners.com/cve/CVE-2015-8080
+|     	OSV:CVE-2022-35951	0.0	https://vulners.com/osv/OSV:CVE-2022-35951
+|     	OSV:CVE-2021-41099	0.0	https://vulners.com/osv/OSV:CVE-2021-41099
+|_    	OSV:CVE-2021-21309	0.0	https://vulners.com/osv/OSV:CVE-2021-21309
+
+Nmap scan report for 10.10.10.222
+Host is up (0.0079s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.38 ((Debian))
+|_http-server-header: Apache/2.4.38 (Debian)
+|_http-phpself-xss: ERROR: Script execution failed (use -d to debug)
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-enum: 
+|   /wp-login.php: Possible admin folder
+|   /wp-json: Possible admin folder
+|   /robots.txt: Robots file
+|   /readme.html: Wordpress version: 2 
+|   /: WordPress version: 5.2.4
+|   /wp-includes/images/rss.png: Wordpress version 2.2 found.
+|   /wp-includes/js/jquery/suggest.js: Wordpress version 2.5 found.
+|   /wp-includes/images/blank.gif: Wordpress version 2.6 found.
+|   /wp-includes/js/comment-reply.js: Wordpress version 2.7 found.
+|   /wp-login.php: Wordpress login page.
+|   /wp-admin/upgrade.php: Wordpress login page.
+|   /readme.html: Interesting, a readme.
+|_  /0/: Potentially interesting folder
+| vulners: 
+|   cpe:/a:apache:http_server:2.4.38: 
+|     	CVE-2022-31813	7.5	https://vulners.com/cve/CVE-2022-31813
+|     	CVE-2022-23943	7.5	https://vulners.com/cve/CVE-2022-23943
+|     	CVE-2022-22720	7.5	https://vulners.com/cve/CVE-2022-22720
+|     	CVE-2021-44790	7.5	https://vulners.com/cve/CVE-2021-44790
+|     	CVE-2021-39275	7.5	https://vulners.com/cve/CVE-2021-39275
+|     	CVE-2021-26691	7.5	https://vulners.com/cve/CVE-2021-26691
+|     	CVE-2020-11984	7.5	https://vulners.com/cve/CVE-2020-11984
+|     	CNVD-2022-73123	7.5	https://vulners.com/cnvd/CNVD-2022-73123
+|     	CNVD-2022-03225	7.5	https://vulners.com/cnvd/CNVD-2022-03225
+|     	CNVD-2021-102386	7.5	https://vulners.com/cnvd/CNVD-2021-102386
+|     	1337DAY-ID-34882	7.5	https://vulners.com/zdt/1337DAY-ID-34882	*EXPLOIT*
+|     	EXPLOITPACK:44C5118F831D55FAF4259C41D8BDA0AB	7.2	https://vulners.com/exploitpack/EXPLOITPACK:44C5118F831D55FAF4259C41D8BDA0AB	*EXPLOIT*
+|     	EDB-ID:46676	7.2	https://vulners.com/exploitdb/EDB-ID:46676	*EXPLOIT*
+|     	CVE-2019-0211	7.2	https://vulners.com/cve/CVE-2019-0211
+|     	1337DAY-ID-32502	7.2	https://vulners.com/zdt/1337DAY-ID-32502	*EXPLOIT*
+|     	FDF3DFA1-ED74-5EE2-BF5C-BA752CA34AE8	6.8	https://vulners.com/githubexploit/FDF3DFA1-ED74-5EE2-BF5C-BA752CA34AE8	*EXPLOIT*
+|     	CVE-2021-40438	6.8	https://vulners.com/cve/CVE-2021-40438
+|     	CVE-2020-35452	6.8	https://vulners.com/cve/CVE-2020-35452
+|     	CNVD-2022-03224	6.8	https://vulners.com/cnvd/CNVD-2022-03224
+|     	8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	6.8	https://vulners.com/githubexploit/8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	*EXPLOIT*
+|     	4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	6.8	https://vulners.com/githubexploit/4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	*EXPLOIT*
+|     	4373C92A-2755-5538-9C91-0469C995AA9B	6.8	https://vulners.com/githubexploit/4373C92A-2755-5538-9C91-0469C995AA9B	*EXPLOIT*
+|     	0095E929-7573-5E4A-A7FA-F6598A35E8DE	6.8	https://vulners.com/githubexploit/0095E929-7573-5E4A-A7FA-F6598A35E8DE	*EXPLOIT*
+|     	CVE-2022-28615	6.4	https://vulners.com/cve/CVE-2022-28615
+|     	CVE-2021-44224	6.4	https://vulners.com/cve/CVE-2021-44224
+|     	CVE-2019-10082	6.4	https://vulners.com/cve/CVE-2019-10082
+|     	CVE-2019-10097	6.0	https://vulners.com/cve/CVE-2019-10097
+|     	CVE-2019-0217	6.0	https://vulners.com/cve/CVE-2019-0217
+|     	CVE-2019-0215	6.0	https://vulners.com/cve/CVE-2019-0215
+|     	CVE-2022-22721	5.8	https://vulners.com/cve/CVE-2022-22721
+|     	CVE-2020-1927	5.8	https://vulners.com/cve/CVE-2020-1927
+|     	CVE-2019-10098	5.8	https://vulners.com/cve/CVE-2019-10098
+|     	1337DAY-ID-33577	5.8	https://vulners.com/zdt/1337DAY-ID-33577	*EXPLOIT*
+|     	CVE-2022-30556	5.0	https://vulners.com/cve/CVE-2022-30556
+|     	CVE-2022-29404	5.0	https://vulners.com/cve/CVE-2022-29404
+|     	CVE-2022-28614	5.0	https://vulners.com/cve/CVE-2022-28614
+|     	CVE-2022-26377	5.0	https://vulners.com/cve/CVE-2022-26377
+|     	CVE-2022-22719	5.0	https://vulners.com/cve/CVE-2022-22719
+|     	CVE-2021-36160	5.0	https://vulners.com/cve/CVE-2021-36160
+|     	CVE-2021-34798	5.0	https://vulners.com/cve/CVE-2021-34798
+|     	CVE-2021-33193	5.0	https://vulners.com/cve/CVE-2021-33193
+|     	CVE-2021-26690	5.0	https://vulners.com/cve/CVE-2021-26690
+|     	CVE-2020-9490	5.0	https://vulners.com/cve/CVE-2020-9490
+|     	CVE-2020-1934	5.0	https://vulners.com/cve/CVE-2020-1934
+|     	CVE-2019-17567	5.0	https://vulners.com/cve/CVE-2019-17567
+|     	CVE-2019-10081	5.0	https://vulners.com/cve/CVE-2019-10081
+|     	CVE-2019-0220	5.0	https://vulners.com/cve/CVE-2019-0220
+|     	CVE-2019-0196	5.0	https://vulners.com/cve/CVE-2019-0196
+|     	CNVD-2022-73122	5.0	https://vulners.com/cnvd/CNVD-2022-73122
+|     	CNVD-2022-53584	5.0	https://vulners.com/cnvd/CNVD-2022-53584
+|     	CNVD-2022-53582	5.0	https://vulners.com/cnvd/CNVD-2022-53582
+|     	CNVD-2022-03223	5.0	https://vulners.com/cnvd/CNVD-2022-03223
+|     	CVE-2019-0197	4.9	https://vulners.com/cve/CVE-2019-0197
+|     	CVE-2020-11993	4.3	https://vulners.com/cve/CVE-2020-11993
+|     	CVE-2019-10092	4.3	https://vulners.com/cve/CVE-2019-10092
+|     	4013EC74-B3C1-5D95-938A-54197A58586D	4.3	https://vulners.com/githubexploit/4013EC74-B3C1-5D95-938A-54197A58586D	*EXPLOIT*
+|     	1337DAY-ID-35422	4.3	https://vulners.com/zdt/1337DAY-ID-35422	*EXPLOIT*
+|     	1337DAY-ID-33575	4.3	https://vulners.com/zdt/1337DAY-ID-33575	*EXPLOIT*
+|_    	PACKETSTORM:152441	0.0	https://vulners.com/packetstorm/PACKETSTORM:152441	*EXPLOIT*
+| http-wordpress-users: 
+| Username found: fraser
+|_Search stopped at ID #25. Increase the upper limit if necessary with 'http-wordpress-users.limit'
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.222
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://10.10.10.222:80/
+|     Form id: 
+|_    Form action: http://10.10.10.222/
+
+Nmap scan report for 10.10.10.223
+Host is up (0.0076s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+3306/tcp open  mysql   MySQL 5.5.5-10.9.3-MariaDB-1:10.9.3+maria~ubu2204
+| vulners: 
+|   MySQL 5.5.5-10.9.3-MariaDB-1:10.9.3+maria~ubu2204: 
+|_    	NODEJS:602	0.0	https://vulners.com/nodejs/NODEJS:602
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Nov 14 19:32:32 2022 -- 14 IP addresses (14 hosts up) scanned in 916.28 seconds

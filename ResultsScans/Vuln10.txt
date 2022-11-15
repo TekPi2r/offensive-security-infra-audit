@@ -1,0 +1,144 @@
+Nmap scan report for 10.10.10.10
+Host is up (0.0081s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:7.2p2: 
+DENIAL |     	PACKETSTORM:140070	7.8	https://vulners.com/packetstorm/PACKETSTORM:140070	*EXPLOIT*
+DENIAL |     	EXPLOITPACK:5BCA798C6BA71FAE29334297EC0B6A09	7.8	https://vulners.com/exploitpack/EXPLOITPACK:5BCA798C6BA71FAE29334297EC0B6A09	*EXPLOIT*
+DENIAL |     	EDB-ID:40888	7.8	https://vulners.com/exploitdb/EDB-ID:40888	*EXPLOIT*
+DENIAL |     	CVE-2016-8858	7.8	https://vulners.com/cve/CVE-2016-8858
+DENIAL |     	CVE-2016-6515	7.8	https://vulners.com/cve/CVE-2016-6515
+DENIAL |     	1337DAY-ID-26494	7.8	https://vulners.com/zdt/1337DAY-ID-26494	*EXPLOIT*
+RCE |     	SSV:92579	7.5	https://vulners.com/seebug/SSV:92579	*EXPLOIT*
+USE ARBITRARY |     	CVE-2016-10009	7.5	https://vulners.com/cve/CVE-2016-10009
+USE ARBITRARY |     	1337DAY-ID-26576	7.5	https://vulners.com/zdt/1337DAY-ID-26576	*EXPLOIT*
+AUTH BYPASS |     	SSV:92582	7.2	https://vulners.com/seebug/SSV:92582	*EXPLOIT*
+PRIVILEGE ESCALATION |     	CVE-2016-10012	7.2	https://vulners.com/cve/CVE-2016-10012
+PRIVILEGE ESCALATION |     	CVE-2015-8325	7.2	https://vulners.com/cve/CVE-2015-8325
+PRIVILEGE ESCALATION |     	SSV:92580	6.9	https://vulners.com/seebug/SSV:92580	*EXPLOIT*
+PRIVILEGE ESCALATION |     	CVE-2016-10010	6.9	https://vulners.com/cve/CVE-2016-10010
+PRIVILEGE ESCALATION |     	1337DAY-ID-26577	6.9	https://vulners.com/zdt/1337DAY-ID-26577	*EXPLOIT*
+SCP |     	EXPLOITPACK:98FE96309F9524B8C84C508837551A19	5.8	https://vulners.com/exploitpack/EXPLOITPACK:98FE96309F9524B8C84C508837551A19	*EXPLOIT*
+SCP |     	EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97	5.8	https://vulners.com/exploitpack/EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97	*EXPLOIT*
+SCP |     	EDB-ID:46516	5.8	https://vulners.com/exploitdb/EDB-ID:46516	*EXPLOIT*
+SCP |     	EDB-ID:46193	5.8	https://vulners.com/exploitdb/EDB-ID:46193	*EXPLOIT*
+SCP |     	CVE-2019-6111	5.8	https://vulners.com/cve/CVE-2019-6111
+SCP |     	1337DAY-ID-32328	5.8	https://vulners.com/zdt/1337DAY-ID-32328	*EXPLOIT*
+SCP |     	1337DAY-ID-32009	5.8	https://vulners.com/zdt/1337DAY-ID-32009	*EXPLOIT*
+AUTH INJECT |     	SSV:91041	5.5	https://vulners.com/seebug/SSV:91041	*EXPLOIT*
+REMOTE ROOT |     	PACKETSTORM:140019	5.5	https://vulners.com/packetstorm/PACKETSTORM:140019	*EXPLOIT*
+AUTH INJECT BYPASS |     	PACKETSTORM:136234	5.5	https://vulners.com/packetstorm/PACKETSTORM:136234	*EXPLOIT*
+COMMAND INJECT |     	EXPLOITPACK:F92411A645D85F05BDBD274FD222226F	5.5	https://vulners.com/exploitpack/EXPLOITPACK:F92411A645D85F05BDBD274FD222226F	*EXPLOIT*
+AUTHED COMMAND INJECT |     	EXPLOITPACK:9F2E746846C3C623A27A441281EAD138	5.5	https://vulners.com/exploitpack/EXPLOITPACK:9F2E746846C3C623A27A441281EAD138	*EXPLOIT*
+RCE |     	EXPLOITPACK:1902C998CBF9154396911926B4C3B330	5.5	https://vulners.com/exploitpack/EXPLOITPACK:1902C998CBF9154396911926B4C3B330	*EXPLOIT*
+RCE |     	EDB-ID:40858	5.5	https://vulners.com/exploitdb/EDB-ID:40858	*EXPLOIT*
+COMMAND INJECT |     	EDB-ID:40119	5.5	https://vulners.com/exploitdb/EDB-ID:40119	*EXPLOIT*
+CRLF INJECT |     	CVE-2016-3115	5.5	https://vulners.com/cve/CVE-2016-3115
+ENUM USER |     	SSH_ENUM	5.0	https://vulners.com/canvas/SSH_ENUM	*EXPLOIT*
+ENUM USER |     	PACKETSTORM:150621	5.0	https://vulners.com/packetstorm/PACKETSTORM:150621	*EXPLOIT*
+ENUM USER |     	EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0	5.0	https://vulners.com/exploitpack/EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0	*EXPLOIT*
+ENUM USER |     	EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283	5.0	https://vulners.com/exploitpack/EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283	*EXPLOIT*
+ENUM USER |     	EDB-ID:45939	5.0	https://vulners.com/exploitdb/EDB-ID:45939	*EXPLOIT*
+ENUM USER |     	EDB-ID:45233	5.0	https://vulners.com/exploitdb/EDB-ID:45233	*EXPLOIT*
+ENUM USER |     	CVE-2018-15919	5.0	https://vulners.com/cve/CVE-2018-15919
+ENUM USER |     	CVE-2018-15473	5.0	https://vulners.com/cve/CVE-2018-15473
+CREATE NULL FILES |     	CVE-2017-15906	5.0	https://vulners.com/cve/CVE-2017-15906
+DENIAL |     	CVE-2016-10708	5.0	https://vulners.com/cve/CVE-2016-10708
+USER ENUM |     	1337DAY-ID-31730	5.0	https://vulners.com/zdt/1337DAY-ID-31730	*EXPLOIT*
+PRIVILEGE ESCALATION |     	CVE-2021-41617	4.4	https://vulners.com/cve/CVE-2021-41617
+USER ENUM |     	EXPLOITPACK:802AF3229492E147A5F09C7F2B27C6DF	4.3	https://vulners.com/exploitpack/EXPLOITPACK:802AF3229492E147A5F09C7F2B27C6DF	*EXPLOIT*
+USER ENUM |     	EXPLOITPACK:5652DDAA7FE452E19AC0DC1CD97BA3EF	4.3	https://vulners.com/exploitpack/EXPLOITPACK:5652DDAA7FE452E19AC0DC1CD97BA3EF	*EXPLOIT*
+USER ENUM |     	EDB-ID:40113	4.3	https://vulners.com/exploitdb/EDB-ID:40113	*EXPLOIT*
+Man In Middle |     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+USER ENUM |     	CVE-2016-6210	4.3	https://vulners.com/cve/CVE-2016-6210
+USER ENUM |     	1337DAY-ID-25440	4.3	https://vulners.com/zdt/1337DAY-ID-25440	*EXPLOIT*
+USER ENUM |     	1337DAY-ID-25438	4.3	https://vulners.com/zdt/1337DAY-ID-25438	*EXPLOIT*
+HIDE FILES |     	CVE-2019-6110	4.0	https://vulners.com/cve/CVE-2019-6110
+HIDE FILES |     	CVE-2019-6109	4.0	https://vulners.com/cve/CVE-2019-6109
+MODIFY PERMISSION |     	CVE-2018-20685	2.6	https://vulners.com/cve/CVE-2018-20685
+LEAK |     	SSV:92581	2.1	https://vulners.com/seebug/SSV:92581	*EXPLOIT*
+GET PRIVATE KEY PRIVILEGE ESCALATION CHILD |     	CVE-2016-10011	2.1	https://vulners.com/cve/CVE-2016-10011
+SCP |     	PACKETSTORM:151227	0.0	https://vulners.com/packetstorm/PACKETSTORM:151227	*EXPLOIT*
+USE ARBITRARY |     	PACKETSTORM:140261	0.0	https://vulners.com/packetstorm/PACKETSTORM:140261	*EXPLOIT*
+USER ENUM |     	PACKETSTORM:138006	0.0	https://vulners.com/packetstorm/PACKETSTORM:138006	*EXPLOIT*
+USER ENUM |     	PACKETSTORM:137942	0.0	https://vulners.com/packetstorm/PACKETSTORM:137942	*EXPLOIT*
+USER ENUM |     	MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-	0.0	https://vulners.com/metasploit/MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-	*EXPLOIT*
+USER ENUM |    	1337DAY-ID-30937	0.0	https://vulners.com/zdt/1337DAY-ID-30937	*EXPLOIT*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+53/tcp open  domain  dnsmasq 2.75
+| vulners: 
+|   cpe:/a:thekelleys:dnsmasq:2.75: 
+|     	CVE-2020-25682	8.3	https://vulners.com/cve/CVE-2020-25682
+|     	CVE-2020-25681	8.3	https://vulners.com/cve/CVE-2020-25681
+|     	SSV:96623	7.8	https://vulners.com/seebug/SSV:96623	*EXPLOIT*
+|     	EXPLOITPACK:708148DF89AFEA44750A9B84E292A6B9	7.8	https://vulners.com/exploitpack/EXPLOITPACK:708148DF89AFEA44750A9B84E292A6B9	*EXPLOIT*
+|     	EDB-ID:42946	7.8	https://vulners.com/exploitdb/EDB-ID:42946	*EXPLOIT*
+|     	CVE-2017-14496	7.8	https://vulners.com/cve/CVE-2017-14496
+|     	1337DAY-ID-28727	7.8	https://vulners.com/zdt/1337DAY-ID-28727	*EXPLOIT*
+|     	SSV:96620	7.5	https://vulners.com/seebug/SSV:96620	*EXPLOIT*
+|     	SSV:96619	7.5	https://vulners.com/seebug/SSV:96619	*EXPLOIT*
+|     	SSV:96618	7.5	https://vulners.com/seebug/SSV:96618	*EXPLOIT*
+|     	EXPLOITPACK:E661AED6AF5BCC1565D1CB0F9878E40B	7.5	https://vulners.com/exploitpack/EXPLOITPACK:E661AED6AF5BCC1565D1CB0F9878E40B	*EXPLOIT*
+|     	EXPLOITPACK:95340EB39AF331E01096F2B1CF7F1DE2	7.5	https://vulners.com/exploitpack/EXPLOITPACK:95340EB39AF331E01096F2B1CF7F1DE2	*EXPLOIT*
+|     	EXPLOITPACK:572F56450B83EECCA41D07EF1B33B48B	7.5	https://vulners.com/exploitpack/EXPLOITPACK:572F56450B83EECCA41D07EF1B33B48B	*EXPLOIT*
+|     	EDB-ID:42942	7.5	https://vulners.com/exploitdb/EDB-ID:42942	*EXPLOIT*
+|     	EDB-ID:42941	7.5	https://vulners.com/exploitdb/EDB-ID:42941	*EXPLOIT*
+|     	CVE-2017-14493	7.5	https://vulners.com/cve/CVE-2017-14493
+|     	CVE-2017-14492	7.5	https://vulners.com/cve/CVE-2017-14492
+|     	CVE-2017-14491	7.5	https://vulners.com/cve/CVE-2017-14491
+|     	1337DAY-ID-28724	7.5	https://vulners.com/zdt/1337DAY-ID-28724	*EXPLOIT*
+|     	1337DAY-ID-28723	7.5	https://vulners.com/zdt/1337DAY-ID-28723	*EXPLOIT*
+|     	1337DAY-ID-28720	7.5	https://vulners.com/zdt/1337DAY-ID-28720	*EXPLOIT*
+|     	CVE-2020-25687	7.1	https://vulners.com/cve/CVE-2020-25687
+|     	CVE-2020-25683	7.1	https://vulners.com/cve/CVE-2020-25683
+|     	SSV:96622	5.0	https://vulners.com/seebug/SSV:96622	*EXPLOIT*
+|     	EXPLOITPACK:C0456C7DF1625677A211CB9799B79F9A	5.0	https://vulners.com/exploitpack/EXPLOITPACK:C0456C7DF1625677A211CB9799B79F9A	*EXPLOIT*
+|     	EDB-ID:42945	5.0	https://vulners.com/exploitdb/EDB-ID:42945	*EXPLOIT*
+|     	CVE-2019-14513	5.0	https://vulners.com/cve/CVE-2019-14513
+|     	CVE-2017-15107	5.0	https://vulners.com/cve/CVE-2017-15107
+|     	CVE-2017-14495	5.0	https://vulners.com/cve/CVE-2017-14495
+|     	CVE-2017-13704	5.0	https://vulners.com/cve/CVE-2017-13704
+|     	CVE-2015-8899	5.0	https://vulners.com/cve/CVE-2015-8899
+|     	1337DAY-ID-28726	5.0	https://vulners.com/zdt/1337DAY-ID-28726	*EXPLOIT*
+|     	SSV:96621	4.3	https://vulners.com/seebug/SSV:96621	*EXPLOIT*
+|     	EXPLOITPACK:22D470FAFA79A3DB978CC3F8766CC759	4.3	https://vulners.com/exploitpack/EXPLOITPACK:22D470FAFA79A3DB978CC3F8766CC759	*EXPLOIT*
+|     	CVE-2021-3448	4.3	https://vulners.com/cve/CVE-2021-3448
+|     	CVE-2020-25686	4.3	https://vulners.com/cve/CVE-2020-25686
+|     	CVE-2020-25685	4.3	https://vulners.com/cve/CVE-2020-25685
+|     	CVE-2020-25684	4.3	https://vulners.com/cve/CVE-2020-25684
+|     	CVE-2019-14834	4.3	https://vulners.com/cve/CVE-2019-14834
+|     	CVE-2017-14494	4.3	https://vulners.com/cve/CVE-2017-14494
+|     	CBF3EF2D-3A5B-5110-A374-4A5ADE9AC91A	4.3	https://vulners.com/githubexploit/CBF3EF2D-3A5B-5110-A374-4A5ADE9AC91A	*EXPLOIT*
+|     	1337DAY-ID-28725	4.3	https://vulners.com/zdt/1337DAY-ID-28725	*EXPLOIT*
+|     	PACKETSTORM:144480	0.0	https://vulners.com/packetstorm/PACKETSTORM:144480	*EXPLOIT*
+|     	PACKETSTORM:144479	0.0	https://vulners.com/packetstorm/PACKETSTORM:144479	*EXPLOIT*
+|     	PACKETSTORM:144473	0.0	https://vulners.com/packetstorm/PACKETSTORM:144473	*EXPLOIT*
+|     	PACKETSTORM:144471	0.0	https://vulners.com/packetstorm/PACKETSTORM:144471	*EXPLOIT*
+|     	PACKETSTORM:144468	0.0	https://vulners.com/packetstorm/PACKETSTORM:144468	*EXPLOIT*
+|_    	PACKETSTORM:144462	0.0	https://vulners.com/packetstorm/PACKETSTORM:144462	*EXPLOIT*
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
